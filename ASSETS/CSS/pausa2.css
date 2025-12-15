@@ -1,0 +1,96 @@
+/* PALETA USADA:
+   Fondo: #F8F9FA
+   Azul suave: #E6EEF5
+   Azul pastel: #A7C7E7
+   Azul acento: #4A90E2
+   Azul oscuro texto: #1C3D5A
+   Rojo alerta: #E63946
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  font-family: 'Poppins', sans-serif;
+  color: #1c3d5a;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container2 {
+  text-align: center;
+  position: relative;
+  padding: 40px;
+  width: 90%;
+  max-width: 600px;
+  background-color: #e6eef5;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+}
+
+/* TÍTULO */
+.h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+/* HORAS INICIO / FIN */
+#inizio,
+#fine {
+  color: #4a90e2;
+  font-weight: 600;
+}
+
+/* CONTADOR */
+.conto {
+  font-size: 4rem;
+  margin: 20px 0;
+  letter-spacing: 2px;
+  color: #1c3d5a;
+}
+
+/* BOTÓN RESET */
+#btnReset {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 15px 35px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+}
+
+#btnReset:hover {
+  background-color: #1c3d5a;
+  transform: scale(1.05);
+}
+
+/* RELOJ DE ARENA GIRANDO */
+#orologio {
+  position: absolute;
+  bottom: -30px;
+  right: -50px;
+  width: 200px;
+  opacity: 0.18;
+  z-index: -1;
+  animation: rotate 20s linear infinite;
+  filter: saturate(0.7);
+}
+
+/* ANIMACIÓN DEL RELOJ */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #fffff4;
+  font-family: 'Poppins', sans-serif;
+  color: #1c3d5a;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+span {
+  font-size: 2.5rem;
+  color: #4a90e2;
+}
+
+#container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  padding: 5%;
+  line-height: 2;
+}
+
+#icon {
+  width: 200px;
+  border-radius: 30px;
+  --soft: 60px;
+
+  border-radius: 20px;
+  mask-image: radial-gradient(
+    circle at center,
+    black calc(100% - var(--soft)),
+    transparent 100%
+  );
+  -webkit-mask-image: radial-gradient(
+    circle at center,
+    black calc(100% - var(--soft)),
+    transparent 100%
+  );
+}
+
+#conto {
+  color: #4a90e2;
+  font-size: 80px;
+  font-weight: 600;
+}
+
+#btnReset {
+  background: #82bafa;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  border: none;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#btnReset:hover {
+  background: #1c3d5a;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+#orologio {
+  position: absolute;
+  bottom: 100px;
+  width: 500px;
+  opacity: 0.18;
+  z-index: -1;
+  animation: rotate 20s linear infinite;
+  filter: saturate(0.7);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/*********/
+
+#alerta {
+  display: none;
+  animation: pulse 1.3s infinite ease-in-out;
+  color: #e63946;
+  font-size: 80px;
+  font-weight: 600;
+}
+
+/* Animación del pulso */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
