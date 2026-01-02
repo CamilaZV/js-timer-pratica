@@ -1,2 +1,27 @@
-Progetto che indica l'ora di inizio e di fine di una pausa, con timer per il conto alla rovescia.
-<img width="853" height="756" alt="PAUSA" src="https://github.com/user-attachments/assets/a42c31d3-0453-4fd7-9ec5-f2f9a0a980ad" />
+# Break Timer
+
+This is a simple JavaScript project that shows the start and end time of a break.
+
+The project includes a countdown timer to track the remaining break time.
+
+This project was created for learning and practice purposes.
+
+## 🎯 Goal
+
+- Practice JavaScript basics
+- Work with time and intervals
+- Create a countdown timer
+- Improve logic and DOM manipulation
+
+## 🛠️ Technologies
+
+- HTML5
+- CSS3
+- JavaScript (Vanilla)
+
+## ⏱️ Features
+
+- Show break start and end times
+- Countdown timer
+- Simple and clear interface
+
